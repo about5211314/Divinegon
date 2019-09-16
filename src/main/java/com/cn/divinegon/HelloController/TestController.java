@@ -16,4 +16,9 @@ public class HelloController {
     public String hello() {
         return "Hello Spring Boot!";
     }
+
+    public void test(){
+        int a = 0;
+        int b = 1;
+    }
 }
