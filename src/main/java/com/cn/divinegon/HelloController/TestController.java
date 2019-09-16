@@ -20,5 +20,7 @@ public class HelloController {
     public void test(){
         int a = 0;
         int b = 1;
+        String abc = "test";
+        abc = abd + "-1";
     }
 }
