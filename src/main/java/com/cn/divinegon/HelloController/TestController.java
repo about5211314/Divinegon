@@ -16,4 +16,9 @@ public class TestController {
     public String hello() {
         return "Hello Spring Boot1111111!";
     }
+
+    public void test(){
+        int a = 0;
+        int b = 1;
+    }
 }
