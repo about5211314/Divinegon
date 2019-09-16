@@ -17,7 +17,13 @@ public class TestController {
         return "Hello Spring Boot1111111!";
     }
 
-    public void test(){
+    public void test1(){
+        int a = 0;
+        int b = 1;
+    }
+
+
+    public void test2(){
         int a = 0;
         int b = 1;
     }
