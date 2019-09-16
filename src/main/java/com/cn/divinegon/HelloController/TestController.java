@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @create: 2019-09-12-下午 16:46
  */
 @RestController
-public class HelloController {
+public class TestController {
 
     @RequestMapping("/hello")
     public String hello() {
-        return "Hello Spring Boot!";
+        return "Hello Spring Boot1111111!";
     }
 }
