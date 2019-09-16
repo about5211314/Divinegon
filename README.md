@@ -11,4 +11,5 @@
 
 # 项目部署
 
-1、安装开发环境 idea tomcat + jdk + mysql
+1、安装开发环境 idea + tomcat + jdk + mysql
+    
