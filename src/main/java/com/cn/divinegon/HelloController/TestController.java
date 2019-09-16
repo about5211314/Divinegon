@@ -23,12 +23,4 @@ public class TestController {
         int c = 0;
         int d = 1;
     }
-
-
-    public void test2(){
-        int a = 0;
-        int b = 1;
-        String abc = "test";
-        abc = abd + "-1";
-    }
 }
