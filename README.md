@@ -26,5 +26,5 @@
 
 # 项目部署
 
->1、安装开发环境 idea + tomcat + jdk + mysql5.7
+>1、安装开发环境 idea  + jdk1.8 + mysql5.7
     
