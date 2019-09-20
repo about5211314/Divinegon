@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/static/js/jquery1.6.2.js" ></script>
+</head>
+<body>
+<h1 align="center">人员信息</h1>
+<input type="button" value="保存" onclick="saveInfo()">
+<input type="button" value="返回" onclick="closeWindow()">
+<table width="50%" align="center" border="2">
+    <tr>
+        <td align="center" width="50%">
+            <h1>姓名</h1>
+        </td>
+        <td align="center" width="50%">
+            <input type="text" name="user_name" id="user_name">
+        </td>
+    </tr>
+    <tr>
+        <td align="center" width="50%">
+            <h1>班级</h1>
+        </td>
+        <td align="center" width="50%" >
+            <input type="text" name="class_es" id="class_es">
+        </td>
+    </tr>
+    <tr>
+        <td align="center" width="50%">
+            <h1>年龄</h1>
+        </td>
+        <td align="center" width="50%" >
+            <input type="text" name="age" id="age">
+        </td>
+    </tr>
+</table>
+</body>
+<script type="text/javascript">
+    alert($("#user_name").val().trim());
+    function saveInfo() {
+        var user_name = $("#user_name").val().trim();
+        var class_es = $("#class_es").val().trim();
+        var age = $("#age").val().trim();
+        var stu = {
+            user_name:user_name,class_es:class_es,age:age
+        }
+        $.ajax({
+            type:"post",
+            url:"/add",
+            datatype:"json",
+            data:{ids:JSON.stringify(stu)},
+            success:function(data){
+                alert("保存成功！");
+                window.close();
+            }
+        });
+    }
+
+    function closeWindow() {
+        window.close();
+    }
+
+
+</script>
+</html>

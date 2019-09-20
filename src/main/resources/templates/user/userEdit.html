@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">人员信息</h1>
+<input type="button" value="保存" onclick="saveInfo()">
+<input type="button" value="返回" onclick="closeWindow()">
+<table width="50%" align="center" border="2">
+    <tr>
+        <td align="center" width="50%">
+            <h1>姓名</h1>
+        </td>
+        <td align="center" width="50%" th:text="${userName}">
+
+        </td>
+    </tr>
+    <tr>
+        <td align="center" width="50%">
+            <h1>班级</h1>
+        </td>
+        <td align="center" width="50%" th:text="${classes}">
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    function saveInfo() {
+        alert("保存成功！");
+        window.close();
+    }
+
+    function closeWindow() {
+        window.close();
+    }
+
+
+</script>
+</html>
