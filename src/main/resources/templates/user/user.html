@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>学生信息</title>
+    <style type="text/css">
+        table {
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        table thead th {
+            border: 1px solid black;
+        }
+        table tbody td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="新建" onclick="newData()">
+<input type="button" value="删除" onclick="delData()">
+<div style="height: 5px"></div>
+<table cellpadding="0" cellspacing="0" width="900px">
+    <thead>
+    <th>序号</th>
+    <th>学生姓名</th>
+    <th>学生年龄</th>
+    <th>班级</th>
+    </thead>
+    <tbody>
+    <tr th:each="entries,stat:${listStudent}" th:style="'background-color:'+@{${stat.odd}?'#F2F2F2'}">
+        <td th:text="${stat.count}"></td>
+        <td th:text="${entries['user_name']}" th:onclick="userEdit([[${entries['id']}]]);"></td>
+        <td th:text="${entries['age']}"></td>
+        <td th:text="${entries['class_es']}"></td>
+        <!-- 写法一：
+        <td th:text="${entries['scourse']['cname']}"></td>
+        <td th:text="${entries['scourse']['cscore']}"></td>-->
+        <!-- 写法二：
+        <td th:text="*{entries['scourse']['cname']}"></td>
+        <td th:text="*{entries['scourse']['cscore']}"></td>-->
+        <!-- 写法三：-->
+         </tr>
+    </tbody>
+</table>
+</body>
+<script>
+    function newData () {
+        window.open("userNew", "_blank",'height=400,width=700,status=yes,top=200,left=400,toolbar=no,menubar=no,location=no');
+    }
+    function userEdit (id) {
+        window.open("userEdit?id="+id, "_blank",'height=400,width=700,status=yes,top=200,left=400,toolbar=no,menubar=no,location=no');
+    }
+</script>
+</html>
