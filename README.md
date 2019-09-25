@@ -11,6 +11,12 @@
 # 发展状况
 
 >2019.9  项目启动
+>        关联showdoc
+>        集成SpringBoot        已完成    
+>        集成MyBatis、MySQL    已完成
+>        集成shiro             进行中
+>        集成activiti          进行中
+>        集成vue-formbuilder   未开始
 
 # Divinegon的特点
 
