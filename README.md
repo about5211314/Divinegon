@@ -13,11 +13,11 @@
 
 >2019.9.10  项目启动
 
->2019.9.25  关联showdoc
+>2019.9.15  关联showdoc
 
->2019.9.25  集成SpringBoot        已完成 
+>2019.9.20  集成SpringBoot        已完成 
    
->2019.9.25  集成MyBatis、MySQL    已完成
+>2019.9.20  集成MyBatis、MySQL    已完成
 
 >2019.10.x  集成shiro             进行中
 
