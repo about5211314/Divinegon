@@ -6,12 +6,19 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 
 本项目计划采用：
 >SpringBoot  
+
 >MyBatis  
+
 >MySQL（数据库）  
+
 >shiro（权限）
+
 >activiti（流程）  
->vue-formbuilder（自定义表单）  
+
+>vue-formbuilder（自定义表单） 
+ 
 >showdoc（api文档自动生成）  
+
 
 # 发展状况
 
