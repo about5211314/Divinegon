@@ -26,7 +26,7 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 
 >2019.11.x  集成activiti          进行中
 
->2019.12.x  集成vue-formbuilder   未开始
+>2019.12.x  集成vue-formbuilder   设计中
 
 ##二期
 >组织管理 待启动
