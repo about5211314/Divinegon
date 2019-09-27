@@ -28,7 +28,7 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 ## 一期
 >2019.9.10  项目启动
 
->2019.9.15  关联showdoc
+>2019.9.15  关联showdoc           已完成 
 
 >2019.9.20  集成SpringBoot        已完成 
    
