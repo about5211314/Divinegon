@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-@EnableAutoConfiguration
 @MapperScan("com.cuit.springboot.gdao")
 public class DivinegonApplication {
 
