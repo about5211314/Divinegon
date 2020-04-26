@@ -1,0 +1,9 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="Java">
+        <added pattern="com.cn.psys.activity.service.ITaskService.findBackAvtivity(taskId)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>
