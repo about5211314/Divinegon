@@ -3,6 +3,7 @@
     <blacklists>
       <blacklist language="Java">
         <added pattern="com.cn.psys.activity.service.ITaskService.findBackAvtivity(taskId)" />
+        <added pattern="com.cn.psys.activity.service.ITaskService.turnTransition(taskId,activityId)" />
       </blacklist>
     </blacklists>
   </component>
